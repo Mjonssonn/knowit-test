@@ -26,7 +26,7 @@ docker exec -it 820cac5fb96f psql -U postgres knowit
 ###### SQL queries
 
 ```
-sql = '''INSERT INTO people(
+CREATE TABLE people(
 name varchar(45) PRIMARY KEY,
 height int,
 mass int,
@@ -40,7 +40,23 @@ created varchar(45),
 edited varchar(45),
 url varchar(45)
 );
-'''
+```
+
+```
+INSERT INTO people(
+name varchar(45) PRIMARY KEY,
+height int,
+mass int,
+hair_color varchar(15),
+skin_color varchar(10),
+eye_color varchar(10),
+birth_year varchar(25),
+gender varchar(10),
+homeworld varchar(100),
+created varchar(45),
+edited varchar(45),
+url varchar(45)
+);
 ```
 
 ### To schedule (windows)
